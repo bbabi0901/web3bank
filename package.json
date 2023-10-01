@@ -1,16 +1,23 @@
 {
-  "name": "bounce-contracts",
+  "name": "web3book-contracts",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "node": "hardhat node --network local",
+    "compile": "hardhat compile",
+    "clean": "hardhat clean",
+    "test": "hardhat test"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
-    "hardhat": "^2.17.4"
+    "@nomicfoundation/hardhat-toolbox": "2.0.2",
+    "hardhat": "2.17.4",
+    "@openzeppelin/contracts": "4.9.3",
+    "@uniswap/v3-core": "1.0.1",
+    "ethereum-waffle": "4.0.10",
+    "dotenv": "16.3.1"
   }
 }
